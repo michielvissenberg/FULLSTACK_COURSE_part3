@@ -1,0 +1,22 @@
+{
+  "name": "fullstack_course_part3",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/michielvissenberg/FULLSTACK_COURSE_part3#readme",
+  "bugs": {
+    "url": "https://github.com/michielvissenberg/FULLSTACK_COURSE_part3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michielvissenberg/FULLSTACK_COURSE_part3.git"
+  },
+  "license": "ISC",
+  "author": "viske33",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
