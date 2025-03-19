@@ -2,8 +2,11 @@
 
 const express = require('express')
 const app = express()
+const morgan = require('morgan')
 app.use(express.json())
-
+morgan.token('person_name', (req) => req.body.name || '')
+morgan.token('person_number', (req) => req.body.number || '')
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms {"name":":person_name", "number":":person_number"}'))
 let persons = [
   { 
     "id": "1",
